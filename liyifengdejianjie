@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="1.css" />
+    <title>李易峰</title>
+</head>
+<body>
+    <video src="滑板视频.ogg"controls="controls" width="500"></video>
+   
+    <form>
+        <!-- 使用input可以输入东西 -->
+       用户名： <input type="text" name="username" value="请输入用户名"><br>
+        密码：  <input type="password" value="请输入密码" name="password"><br>
+        <!-- 单选按钮可以选多个，点击时将圈圈会点满 -->
+        <br>帅<input type="radio">很帅<input type="radio"><br>
+        <!-- 复选框，可以选多个，点击时方框内打勾 -->
+        <!-- name 定义input元素的名称，value定义input元素的值
+        checked后加checked默认选中这一项，maxlength为允许输入的字符最长长度 -->
+        李易峰帅吗 帅<input type="checkbox">很帅<input type="checkbox">
+        <!-- label的使用方便用户体验，点击是或不是时相当于点击到了选择 -->
+        <br> 杨鹏是傻逼吗？<label for="yes" >是</label><input type="radio" name="sex" id="yes"> <label for="very yes" >非常是</label><input type="radio" name="sex" id="very yes">
+        <br>杨鹏是傻逼吗？ 是<input type="checkbox"name="yes" checked="checked">不是<input type="checkbox">
+        <!-- 下拉标签，节省空间 -->
+        <br>你为什么喜欢杨鹏<textarea></textarea>
+        <br>杨鹏帅嘛
+        <br><select>
+            <option>帅</option>
+            <option>很帅</option>
+            <option>非常帅</option>
+            <option>超级无敌帅</option>
+            <option selected="selected">好丑</option>
+            <option>丑八怪</option>
+            <option>非常丑</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+        </select>
+
+        <!-- submit 点击了提交按钮可以把表单域form里面的表单元素提交给后台服务器 -->
+        <br><input type="submit"value="免费注册">
+        <br><input type="reset"value="重新填写">   
+          <!-结合Javascript使用-  -->
+        <br><input type="button"value="短信验证码"> 
+        <!-- 可以上传文件 -->
+        <br>上传文件<input type="file">
+        
+    </form>
+<h1>李易峰</h1>
+<!-- 表格有边框用border，默认为“”表示没有边框，align规定表格相对周围元素对齐方式（left right center
+cellpadding规定单元边沿与其内容之间的空白默认1像素cellpaddingspacing规定单元格之间的空白默认为2像素
+width规定表格的宽度 -->
+<p>
+<table border="1" cellpadding="5" cellspacing="0">
+    <!-- 合并单元格 先确定跨行还是跨列 跨列是两个横的格子合成一个横的格子用colspan
+    跨行是两个竖的格子合成一个竖的格子用rowspan
+并且要把合并格子下面或后面那一个删除
+注意把竖的合并时要找到下一列同一个位置的格子进行删除-->
+    <tr>
+        <td colspan="2"></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td rowspan="2"></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <!-- 这里将第三列第三个格子和第三列第四个格子 合并成一个竖的格子了，这里对应删除了后面这个格子-->
+        <td></td>
+        
+    </tr>
+</table>  </p>
+<p>
+<table border="1" cellpadding="20" cellspacing="0">
+    <thead>
+         <tr>
+             <th>目录</th>
+             <td>
+                <dl>
+
+                    <dt><a href="#experience">1.早年经历</a></dt>
+                    <dt><a href="#actor">2.演艺经历</a></dt>
+                    <dt><a href="#main work">3.主要作品</a></dt>
+                    <dd><a href="#move">参演电影</a></dd>
+                    <dd><a href="#dianshi">参演电视剧</a></dd>
+             </dl>
+            </td>
+             <td></td>
+             <td></td>
+         </tr>
+</table></p> 
+<p>李易峰，1987年5月4日出生于四川省成都市，中国内地男演员、流行乐歌手、影视制片人，毕业于四川师范大学电影电视学院。2007年，参加东方卫视选秀娱乐节目《加油！好男儿》的比赛，获得全国总决赛第八名，从而正式出道；同年，发行首张EP《四叶草》。2009年，发行首张个人专辑《小先生》。2010年，主演都市爱情剧《幸福一定强》、《幸福最晴天》，获2011年国剧盛典最佳新演员奖。2012年，在都市爱情剧 ... >>></p>
+<div><span>目录</span>
+<span><ul>
+        <li><a href="#experience">1.早年经历</a></li>
+        <li><a href="#actor">2.演艺经历</a></li>
+        <li><a href="#main work">3.主要作品</a></li>
+        <li><a href="#activity">4.社会活动</a></li>
+        <li><a href="#estimation">5.人物评价</a></li>
+    </ul></span></div>
+    
+    <div>
+        <h2 >基本信息</h2>
+        <p><p>李易峰，1987年5月4日出生于四川省成都市，中国内地男演员、流行乐歌手、影视制片人，毕业于四川师范大学电影电视学院。</p>
+<p> 2007年，参加东方卫视选秀娱乐节目<a href="https://baike.baidu.com/item/%E5%8A%A0%E6%B2%B9%EF%BC%81%E5%A5%BD%E7%94%B7%E5%84%BF/19373431">《加油！好男儿》</a>的比赛，获得全国总决赛第八名，从而正式出道 [1]  ；同年，发行首张EP《四叶草》。2009年，发行首张个人专辑《小先生》</a> [2]  。2010年，主演都市爱情剧《幸福一定强》 [3]  、《幸福最晴天》 [4]  ，获2011年国剧盛典最佳新演员奖 [5]  。2012年，在都市爱情剧《真爱谎言》中挑战扮演自闭症患者 [6]  。2013年，凭借都市爱情剧《千金归来》获得乐视盛典最受欢迎男演员奖。</p>
+<p>&nbsp;&nbsp;2014年，因古装仙侠剧<a href="https://baike.baidu.com/item/%E5%8F%A4%E5%89%91%E5%A5%87%E8%B0%AD/5016869">《古剑奇谭》</a>中“百里屠苏”一角而获得广泛关注 [7]  ，并获得国剧盛典内地最具人气男演员和最具商业价值男演员奖 [8]  。2015年，主演年代剧《活色生香》和网络季播剧《盗墓笔记》 [9]  ；同年，主演电影《栀子花开》 [10]  、《怦然星动》 [11]  ；同年，获得“2015年福布斯中国名人榜”第九名。2016年，凭借电影《老炮儿》获第33届大众电影百花奖最佳男配角奖 [12]  ；同年，主演谍战剧《麻雀》 [13]  、仙侠剧《青云志》和电影《心理罪》 [14]  。</p>
+<p>&nbsp;&nbsp;2017年5月，获得第22届电视华鼎奖中国百强电视剧最佳男主角，并当选十年全国观众最喜爱的影视明星；同年，主演电影《动物世界》和创业励志电视剧《我在北京等你》 [15]  。2018年3月，主演年代剧《隐秘而伟大》 [16]  。同年10月14日，荣获第29届中国电视金鹰奖观众喜爱的男演员奖和第12届中国金鹰电视艺术节最具人气男演员奖两项大奖 [17]  。</p>
+<p>&nbsp;&nbsp;2019年10月，出演火箭军题材电视剧《号手就位》 [18]  。</p>
+</p>
+    </div>
+    <div>
+        <h2 id="experience">早年经历</h2>
+        <p>1994年-1999年就读于成都三圣街小学。2000年在成都学道街中学读初中。2003年在成都列五中学读高中。2006年-2010年就读于原四川师范大学电影电视学院播音与主持系。</p>
+        <!-- 链接插图片了，点图片可以跳转链接 -->
+        <a href="https://baike.baidu.com/pic/%E6%9D%8E%E6%98%93%E5%B3%B0/3908480/2897232923/d1160924ab18972bd407a0c2d4866c899e510fb39c2a?fr=lemma&ct=cover#aid=2897232923&pic=d1160924ab18972bd407a0c2d4866c899e510fb39c2a"target="_blank"><img src="李易峰01.jpg"width="500"></a>
+    </div>
+    <div>
+        <h2 id="actor">演艺经历</h2>
+<br>2007年，李易峰在东方卫视选秀娱乐节目《加油好男儿》获得总决赛第八名以及最具亲和力奖，从而进入娱乐圈 [21]  ；11月，推出首支个人单曲《我爱的人伤我最深》 [22]  ；12月15日，发行首张个人EP专辑《四叶草》，及个人首本半自传写真《时间总是在转圈圈的》。 [23] 
+<br>2008年5月13日，由李易峰作词的四川地震公益歌曲《娃娃不哭》发布 [24]  ；7月20日发行概念EP《摩天轮》。 [25]  7月26日，在上海美琪大剧院举行个人首场演唱会“2008我们易起峰”。
+<br>2009年，出演改编自日本同名动漫的青春励志剧《网球王子》，在剧中饰演左博，这是他的首部电视剧作品 [26]  ；5月17日，发行首张个人专辑《小先生》 [27]  ，收录了包括《我曾爱过的女孩》、《我要的幸福》等在内的10首歌曲。
+<br>2010年1月，出演的都市爱情剧《幸福一定强》播出，并在片中饰演了陆森 [28]  ；10月29日发布EP《那首歌》 [29]  ，收录了包括《相爱那一年》、《那首歌》等在内的3首歌曲。
+<br>2011年2月，出演的都市爱情剧《幸福一定强》续集《幸福最晴天》播出，并在片中饰演了项允超一角 [30]  ，并凭借该剧获得2011年国剧盛典最佳新演员奖 [31]  。该剧在安徽卫视及台湾地区蝉联收视冠军 [32]  。10月，由李易峰、林依晨、陈柏霖主演的爱情电影《恋爱恐慌症》上映，这是其第一部电影作品 [33]  。
+<br>2012年1月，出演的都市爱情剧的“幸福三部曲”系列之《幸福三颗星》播出 [34]  ；4月份，在家庭伦理剧《真爱谎言》中饰演“自闭少爷”姜希宇 [35]  ，该剧飙升至一年以来江西卫视同时段最高收视 [36]  ；5月份，在古装悬疑电视剧《赏金猎人》中饰演衙门捕快毓泰 [37]  ；8月，在都市爱情剧《爱的蜜方》饰演陈家三儿子陈立扬一角 [38]  。
+<span><img src="李易峰02.jpg"width="400><img src="李易峰00.jpg"width="400"</span>
+</div>
+<div>
+
+</div>
+
+</body>
+</html>
